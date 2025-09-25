@@ -218,7 +218,7 @@ export default function ElevatorSimulator() {
               <div className="flex gap-4">
                 {/* Floor labels + call buttons */}
                 <div className="w-20 flex flex-col-reverse items-center text-sm">
-                  {Array.from({ length: FLOORS }, (_, idx) => FLOORS - idx).map((f) => (
+                  {Array.from({ length: FLOORS }, (_, idx) => idx + 1).map((f) => (
                     <div key={f} className="w-full flex items-center justify-between h-12">
                       <div className="w-8 text-xs">{f}</div>
                       {renderFloorButtons(f)}
