@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚇 Elevator Simulator 
+## ⚠️ Work in Progress
+This project is still under development — features and behavior may change.
 
-## Getting Started
+A fun **elevator system simulator** built with **Next.js + Tailwind CSS**.  
+Simulates 3 elevators serving 10 floors with smooth movement, door animations, and call buttons.
 
-First, run the development server:
+## Features
+- 3 elevators, 10 floors
+- Floor call buttons (Up/Down)
+- Inside elevator panels
+- Queue handling & assignment algorithm
+- Smooth movement + door animations
+- Live status controller
 
+## Run Locally
 ```bash
+git clone https://github.com/yourusername/elevator-simulator.git
+cd elevator-simulator
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Config
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Edit `components/types.ts`:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `ELEVATORS` → number of elevators  
+- `FLOORS` → number of floors  
+- `SPEED_FLOOR_SECONDS` → speed per floor  
+- `DOOR_OPEN_SECONDS` → door duration  
